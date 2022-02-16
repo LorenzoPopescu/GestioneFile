@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nomefile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="91dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/leggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="141dp"
+        android:text="Leggi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomefile" />
+
+    <Button
+        android:id="@+id/scrivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="55dp"
+        android:text="Scrivi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leggi"
+        app:layout_constraintTop_toBottomOf="@+id/nomefile" />
+
+    <TextView
+        android:id="@+id/testo"
+        android:layout_width="365dp"
+        android:layout_height="342dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="30dp"
+        android:text="-->"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leggi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
